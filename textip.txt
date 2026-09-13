@@ -1,0 +1,268 @@
+Delivered-To: pkvbspu2020@gmail.com
+Received: by 2002:a2e:9e44:0:0:0:0:0 with SMTP id g4csp501041ljk;
+        Thu, 28 Jul 2022 21:30:42 -0700 (PDT)
+X-Google-Smtp-Source: AA6agR6feBCoDGCRH1MxFIvqAlZTVEQrt9m6IYoQKr7bSOqVhazA0ZGlIWQ6m+j3aBwXvRuJqGum
+X-Received: by 2002:a17:902:778c:b0:16d:9d4d:51f9 with SMTP id o12-20020a170902778c00b0016d9d4d51f9mr2051048pll.19.1659069042721;
+        Thu, 28 Jul 2022 21:30:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1659069042; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PmA+t2EIW6qs3R+02YQZq5UaCCrhVXwdTHhNX4N/wsXIlqskCiN84H2Z2/ZsgrXgHF
+         5YRm+Rs5/csMnUVs8vwQsREqPyALiu7vFSr+Qdl//YmRcWdQ2jwgYPodnswffQ9HkaTx
+         AfxoCMfO96bpdBC1i+MUx5+RQNDazxEOQiLDQckIJ22cexe2NTDfYNbpTsYiA9sfYgwm
+         S9hu1rNStxmS6nYdNwuOqxuI5cqtIwtu8gc3hJCDKrpc6Js+RYomBCt3U0nF+n2jgqG8
+         K0QfEPoScFlIXVI6bZDolmsSG2dlZgpZFZ9Tj3Tu/uabzw0fnF3HfvwDgS8U9iXZ4xJu
+         0Z4Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:list-id:mime-version:list-unsubscribe-post
+         :list-unsubscribe:date:subject:to:from:dkim-signature;
+        bh=nlPBwyceAm0P8/mWsxj76tLbRMLVgZjMk1EAY+zJkD0=;
+        b=LJ1xHnj6zPda6LV+0x7pTQyO26ROd5DDd2XBK0J2fuoeMBJPgb7UAoY6oyfNOZrQaJ
+         fKkB9gRqamu3ZEtVSbnX+3AJKTC8eG7X1+ZJe6vezGphHCJxhBk85XonRBG1n3Rf46dU
+         ImbB8wdyUuKHZ+33ynsoTuHHyteTCUIG/gLuIxjbimOgawGU1vLtgVwmQ8Kt76cAvLtS
+         W9o7jGoFrUbaltN/BSoVaS+VEaIJiFTpUG3RpXqe+YAzpuwkxKjdP6aqpfJgGQyTDbPL
+         X/Z+eLU5a1Gx1X0BUIoBAKXG1jda7xMDX6RRg9EN7SfHgU6aT1kmqktrkSnONzu4S1fH
+         +KAA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.skillsup.cloud header.s=12dkim1 header.b=AEnbxAlC;
+       spf=pass (google.com: domain of bounce-7104_html-469377622-208590-534000669-1001@bounce.info.skillsup.cloud designates 13.110.218.123 as permitted sender) smtp.mailfrom=bounce-7104_HTML-469377622-208590-534000669-1001@bounce.info.skillsup.cloud;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.skillsup.cloud
+Return-Path: <bounce-7104_HTML-469377622-208590-534000669-1001@bounce.info.skillsup.cloud>
+Received: from mta.info.skillsup.cloud (mta.info.skillsup.cloud. [13.110.218.123])
+        by mx.google.com with ESMTPS id b11-20020a056a000a8b00b0052adad0f01esi2701843pfl.376.2022.07.28.21.30.42
+        for <pkvbspu2020@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 28 Jul 2022 21:30:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-7104_html-469377622-208590-534000669-1001@bounce.info.skillsup.cloud designates 13.110.218.123 as permitted sender) client-ip=13.110.218.123;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.skillsup.cloud header.s=12dkim1 header.b=AEnbxAlC;
+       spf=pass (google.com: domain of bounce-7104_html-469377622-208590-534000669-1001@bounce.info.skillsup.cloud designates 13.110.218.123 as permitted sender) smtp.mailfrom=bounce-7104_HTML-469377622-208590-534000669-1001@bounce.info.skillsup.cloud;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.skillsup.cloud
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=12dkim1; d=info.skillsup.cloud; h=From:To:Subject:Date:List-Unsubscribe:List-Unsubscribe-Post:MIME-Version: List-ID:X-CSA-Complaints:Message-ID:Content-Type; i=jobs@info.skillsup.cloud; bh=nlPBwyceAm0P8/mWsxj76tLbRMLVgZjMk1EAY+zJkD0=; b=AEnbxAlCBdYoQjKeAZI3LL3IC5UZFGnY3A1kfJq/RrkAgCVw/f3AW6hYOHrfJ0jOu44BRjZL/sfn
+   7nU7/tCBMGc6yPMdVvBZHSWvn+QVYdLrS5Ze2KMJDF0TfGWbcsLPO54czdcip9M4ivldc/Cl3qMF
+   FLEGpUFKhVyzi674nquYFcjapEQeiNQHP6MEsA7CsZqmM+3OZpfA/7VlvaJAQegb8R3VDpdv6TYn
+   QxwS9J/hlUOkRw9dQotnHvbA/O0UpIErMEsisFbX1x2wRB6NO1/irYqk8olAeTYn5XusTStJBzWK
+   ONthsYbLNZYB8HnA83aUn5r/DkB+bxdDqOhSEg==
+Received: by mta.info.skillsup.cloud id hsdh742fmd40 for <pkvbspu2020@gmail.com>; Fri, 29 Jul 2022 04:30:41 +0000 (envelope-from <bounce-7104_HTML-469377622-208590-534000669-1001@bounce.info.skillsup.cloud>)
+From: Dimple Bharti <jobs@info.skillsup.cloud>
+To: <pkvbspu2020@gmail.com>
+Subject: Jr.Engineer:Airtel Requires You for System Operatons
+Date: Thu, 28 Jul 2022 22:30:40 -0600
+List-Unsubscribe: <https://click.info.skillsup.cloud/subscription_center.aspx?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWQiOiI1MzQwMDA2NjkiLCJzIjoiNDY5Mzc3NjIyIiwibGlkIjoiNzEwNCIsImoiOiIyMDg1OTAiLCJqYiI6IjEwMDEiLCJkIjoiMTIwMDAyIn0.Vl_4HJKQO9Tb3j_rcManm5QYVP5YGmqmghA8le-91p8>, <mailto:leave-fd1f137175606b2531492c-fe2110767c67037a731672-fec716707d610d7d-fe2e11737164047d731279-ff3d15707565@leave.info.skillsup.cloud>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+x-CSA-Compliance-Source: SFMC
+MIME-Version: 1.0
+List-ID: <534000669.xt.local>
+X-CSA-Complaints: csa-complaints@eco.de
+X-SFMC-Stack: 12
+x-job: 534000669_208590
+Message-ID: <1e994c4d-828f-45d9-bdf0-148b6e55abd6@iad4s12mta289.xt.local>
+Feedback-ID: 534000669:208590:13.110.218.123:sfmktgcld
+Content-Type: multipart/alternative; boundary="zmJfuC2wCm22=_?:"
+
+--zmJfuC2wCm22=_?:
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+ To view this email as a web page, go to the link below, or copy and paste it into your browser's address window.
+https://view.info.skillsup.cloud/?qs=5043e15a7f04ceeca560c2f06b704dbafa4e16a99c734eebe83ad8a0451c591efa624a2e6df137902fc03572a171a16e014c13d7f73cafa05dea5b79ffbeb2ec8d8e3d99baf18632deb3c17bc8155c1d
+ 
+
+ 
+
+Jr.Officer:Trainee 
+
+
+Hi Candidate
+
+
+Airtel Requisites for Jr.Engineer as an Trainee. I am Dewesh Singh just saw and requires your Be/ B.tech/ Diploma/ Mca, Bca details for the same.
+
+
+09th Aug | Apply for Your Location | AllStream Engineers(Between 47 - 57K)
+
+0-3 Years|BE, B.Tech, Diploma, Bca, Mca
+
+https://click.info.skillsup.cloud/?qs=7bf11d8f48b78a4656c78b677262a073fbc51b8ba788f541a8b16fc789158af8d4b539b914f2a107cc31fe5ae1a6bef08bb2f5960f5ff7f71260c033e90f98a2 
+
+
+Thanks & Regards,
+
+Dewesh Singh
+
+https://click.info.skillsup.cloud/unsub_center.aspx?qs=5a0d3065c2508c3c423f698c5cf3a036d515957a4c95705208257b4c880da4398905f7a4753059705aa41508628ff13ab87d67dda29bce6d30d584825bcfe355b89aad232a984f2b 
+Unsubscribe 
+
+
+ 
+ 
+
+
+  
+ 
+
+
+--zmJfuC2wCm22=_?:
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      @-ms-viewport{ width: device-width;}
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 480px) {
+        .container {width: 100% !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-height:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; height:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; padding:0 !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    </style>
+    <!--[if mso]>       <style type="text/css">           /* Begin Outlook Font Fix */           body, table, td {               font-family: Arial, Helvetica, sans-serif ;               font-size:16px;               color:#000000;               line-height:1;           }           /* End Outlook Font Fix */       </style>     <![endif]-->
+  </head>
+  <body bgcolor="#ffffff" text="#000000" style="background-color: #ffffff; color: #000000; padding: 0px; -webkit-text-size-adjust:none; font-size: 16px; font-family:arial,helvetica,sans-serif;"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">0-3 Years</div>
+    <div style="font-size:0; line-height:0;"><img src="https://click.info.skillsup.cloud/open.aspx?ffcb10-fec716707d610d7d-fe30167074650c7d761c78-fe2e11737164047d731279-ff3313717560-fe2110767c67037a731672-ff3d15707565&bmt=0" width="1" height="1" alt=""></div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <td align="center" valign="top">
+          <div style="margin:18px 0;"><!--   To view this email as a web page, click on the link below,  or copy and paste it into your browser's address window.  https://view.info.skillsup.cloud/?qs=5043e15a7f04ceeca560c2f06b704dbafa4e16a99c734eebe83ad8a0451c591efa624a2e6df137902fc03572a171a16e014c13d7f73cafa01dcda17d1680c599  .//-->
+<font face="verdana" size="1" color="#444444">To view this email as a web page, go <a href="https://view.info.skillsup.cloud/?qs=5043e15a7f04ceeca560c2f06b704dbafa4e16a99c734eebe83ad8a0451c591efa624a2e6df137902fc03572a171a16e014c13d7f73cafa05dea5b79ffbeb2ec2583a204699c464deaae6e7e1910a67e" >here.</a></font></div>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table cellspacing="0" cellpadding="0" border="0" width="600" class="container" align="center">
+            <tr>
+              <td>
+                <table class="tb_properties border_style" style="background-color:#FFFFFF;" cellspacing="0" cellpadding="0" bgcolor="#ffffff" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- added padding here -->
+                          <td class="content_padding" style="">
+                            <!-- end of comment -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr> <!-- top slot -->
+                                <td align="center" class="header" valign="top">
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <table cellspacing="0" cellpadding="0" style="width:100%">
+                                              <tbody>
+                                              <tr>
+                                                <td class="responsive-td" valign="top" style="width: 100%;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><p>
+	Jr.Officer:Trainee&nbsp;<br>
+	<br>
+	Hi Candidate</p><p>
+	Airtel Requisites for Jr.Engineer as an Trainee. I am Dewesh Singh just saw and&nbsp;requires&nbsp;your Be/ B.tech/ Diploma/ Mca, Bca details for the same.</p><p>
+	<img alt="cgilogo" src="https://www.skillsup.cloud/images/logo/airtlogo.gif"></p><p>
+	09th Aug | Apply for Your Location | AllStream Engineers(Between 47 - 57K)<br>
+	0-3 Years|BE, B.Tech, Diploma, Bca, Mca</p><p>
+	<a   data-linkto="https://" href="https://click.info.skillsup.cloud/?qs=7bf11d8f48b78a46ff63a2ac9ce10d022528068bbd837f497a86e475fed133927bff5a9078c4e27dc82cf08c7ae4f264a93f35d24866792d4ae97670a33ca3ab" style="color:#808080;text-decoration:none;" title="View"><img alt="readmechlogo" src="https://www.skillsup.cloud/images/logo/viewapp.png"></a></p><p>
+	Thanks &amp; Regards,<br>
+	Dewesh Singh</p><hr>
+<p style="text-align: right;">
+	<br>
+	<br>
+	<a  href="https://click.info.skillsup.cloud/unsub_center.aspx?qs=5a0d3065c2508c3c423f698c5cf3a036d515957a4c95705208257b4c880da4398905f7a4753059705aa41508628ff13ab87d67dda29bce6d0a988ca0963077aba77bf66c5648f0f7">Unsubscribe</a></p></td></tr></table>
+												  
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+           
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+--zmJfuC2wCm22=_?:--
